@@ -1,0 +1,32 @@
+header{
+    background: #000;
+    color: #fff;
+    padding-top: 20px;
+    min-height: 70px;
+    border-bottom: #1de827 3px solid;
+}
+
+header h1{
+    float: left;
+    margin: 0;
+    padding: 0 20px 0 20px;
+}
+
+header nav{
+    float: right
+}
+
+header li{
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header a{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header a:hover{
+    color: #ccc;
+}

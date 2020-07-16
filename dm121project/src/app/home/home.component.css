@@ -1,0 +1,47 @@
+/* Show Case */
+#showcase {
+    min-height: 400px;
+    background: url('../../assets/showcase.jpg') no-repeat -315px -792px;
+    color: #fff;
+    text-align: center;
+}
+
+#showcase h1, #showcase p{
+    position: relative;
+    top: 100px;
+}
+
+#showcase h1{
+    font-size: 55px;
+}
+
+/* Newsletter */
+#newsletter{
+    background: #000;
+    color: #fff;
+    min-height: 70px;
+}
+
+#newsletter h2, #newsletter form{
+    margin-top: 15px
+}
+
+#newsletter form{
+    padding-left: 80px;
+}
+
+#newsletter input[type=email]{
+    padding: 4px;
+    height: 38px;
+    width: 250px;
+}
+
+/* Box languages */
+.box{
+    text-align: center;
+    padding: 10px;
+}
+
+.box img{
+    width: 90px;
+}
