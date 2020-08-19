@@ -1,47 +1,66 @@
-/* Show Case */
-#showcase {
-    min-height: 400px;
+#main-content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+}
+#showcase, #newsletter, #box-languages{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+/*showcase*/
+#showcase{
+    flex-direction: column;
+    min-height: 40vh;
     background: url('../../assets/showcase.jpg') no-repeat -315px -792px;
     color: #fff;
     text-align: center;
 }
 
-#showcase h1, #showcase p{
-    position: relative;
-    top: 100px;
-}
-
-#showcase h1{
-    font-size: 55px;
-}
-
-/* Newsletter */
+/*newsletter*/
 #newsletter{
     background: #000;
     color: #fff;
-    min-height: 70px;
 }
-
-#newsletter h2, #newsletter form{
-    margin-top: 15px
+#newsletter h2{
+   flex: 1; 
 }
-
+#newsletter h2,
 #newsletter form{
-    padding-left: 80px;
+    margin: 0.9375em; /* 15 / 16 */
 }
-
 #newsletter input[type=email]{
-    padding: 4px;
-    height: 38px;
-    width: 250px;
+    padding: 0.25em;
+    height: 2.375em;
+    width: 15.625em
 }
 
-/* Box languages */
+/*box languages*/
 .box{
     text-align: center;
     padding: 10px;
 }
-
 .box img{
-    width: 90px;
+    max-width: 50%
 }
+
+/* Media Queries */
+@media screen and (max-width: 48em){ /* 768/16 */
+    #showcase{
+        background: #f4f4f4;
+        color: #000;
+        min-height: 10vh
+    }
+    #newsletter h2, #newsletter form{
+        margin: 0
+    }
+    .box{
+        padding: 0.1875em; /* 3 / 16*/
+    }
+    .box h3{
+        display: none;
+    }
+    .box img{
+        max-width: 30%
+    }
+}
+

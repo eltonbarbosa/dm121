@@ -1,5 +1,5 @@
-<main>
-    <section id="showcase" class="row">
+<main id="main-content">
+    <section id="showcase" class="flex-container">
         <h1>
             Inatel DM121
         </h1>
@@ -8,28 +8,28 @@
         </p>
     </section>
 
-    <section id="newsletter" class="row">
-        <h2 class="col span6">
+    <section id="newsletter" class="flex-container">
+        <h2>
             Inscreva-se em nossa newsletter
         </h2>
-        <form class="col span6" [formGroup]="newsLetterForm">
+        <form [formGroup]="newsLetterForm">
             <input formControlName="email" name="email" id="email" type="email" placeholder="Seu Email">
             <button class="button" (click)="onSubmit()">Inscreva</button>
         </form>
     </section>
 
-    <section id="box-languages" class="row">
-        <div class="col span4 box">
+    <section id="box-languages" class="flex-container">
+        <div class="box">
             <img src="../assets/logo_html.png" alt="">
             <h3>HTML5 Marckup</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
         </div>
-        <div class="col span4 box">
+        <div class="box">
             <img src="../assets/logo_css.png" alt="">
             <h3>CSS3 Styling</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
         </div>
-        <div class="col span4 box">
+        <div class="box">
             <img src="../assets/logo_js.png" alt="">
             <h3>Javascript</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
